@@ -1,0 +1,8 @@
+LOAD CSV WITH HEADERS FROM 'file:///data.csv' AS line 
+MERGE (q:Query {name: line.Queryname})
+MERGE (f:FullText { text: line.Fulltext})
+MERGE(s:SummaryText { text: line.Textsummarization})
+MERGE (q)-[r1:HAS_FULLTEXT]->(f)
+SET r1.queryId = toInteger(line.Queryid)
+MERGE (q)-[r2:HAS_SUMMARY]->(s)
+SET r2.queryID = toInteger(line.Queryid)
