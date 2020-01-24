@@ -1,5 +1,5 @@
 Graphs for everyone:
-In this project in the code, i am trying to read the data from process sheet(i.e, different documents) and the document contains four fields 1.Query Id, 2.Query Name, 3.Full Text, 4.Text Summarization. Here i am creating a Queryname node which has data Valeo in it, and a Full Text node which has some text data in it and Text Summarization node which contains summarized text of full text field. Three different nodes. In the final MERGE are connecting the three nodes with relationship 'Has summary'. 
+In this project in the code, i am trying to read the data from process sheet(excel)(i.e, different documents) and the document contains four fields 1.Query Id, 2.Query Name, 3.Full Text, 4.Text Summarization. Here i am creating a Queryname node which has data Valeo in it, and a Full Text node which has some text data in it and Text Summarization node which contains summarized text of full text field. Three different nodes. In the final MERGE are connecting the three nodes with relationship 'Has summary'. 
 
 So when you click on node Valeo(i.e, Query Name) it should display Full text node which has relationship 'Has summary' and when you click on Full text node it should display Text summarization node with a relationship 'Has summary'.
 
